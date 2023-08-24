@@ -1,0 +1,42 @@
+window:
+  padding:
+    x: 16
+    y: 16
+      # opacity: 0.80
+    #decorations: none
+
+scrolling:
+  # Specifying '0' will disable scrolling.
+  history: 5000
+
+font:
+    size: 12
+    normal:
+        family: JetBrainsMono Nerd Font
+        style: Regular
+
+    bold:
+        family: JetBrainsMono Nerd Font
+        style: Bold
+
+    italic:
+        family: JetBrainsMono Nerd Font
+        style: Italic
+
+    bold_italic:
+        family: JetBrainsMono Nerd Font
+        style: Bold Italic
+
+cursor:
+  # Cursor style
+  #
+  # Values for `style`:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: Beam
+
+    #draw_bold_text_with_bright_colors: true
+import:
+  - /home/bond/.config/alacritty/dracula.yml
+

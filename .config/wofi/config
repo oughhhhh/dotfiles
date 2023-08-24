@@ -1,0 +1,9 @@
+layer=overlay
+run-always_parse_args=true
+term=alacritty
+allow_images=false
+hide_scroll=true
+insensitive=true
+prompt=
+width = 666
+height = 333
