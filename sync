@@ -1,3 +1,4 @@
+git config credential.helper store
 git clone --bare https://github.com/oughhh/dotfiles.git $HOME/.dotfiles
 function config {
    /usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME $@
