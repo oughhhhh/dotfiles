@@ -97,3 +97,4 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   Hyprland
 fi
 alias config='/usr/bin/git --git-dir=/home/bond/dotfiles/ --work-tree=/home/bond'
+alias yay='yay --aur'

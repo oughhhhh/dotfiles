@@ -57,6 +57,7 @@ window#waybar {
 #tray,
 #cpu,
 #memory,
+#idle_inhibitor,
 #temperature,
 #backlight {
     background: #282a36;
@@ -64,6 +65,11 @@ window#waybar {
     margin-bottom: 5px;
     /* margin: 4px 0px; */
     /* border: 1px solid #181825; */
+}
+
+#idle_inhibitor {
+    color: #6272a4;
+    margin-right: -5px;
 }
 
 #workspaces {
