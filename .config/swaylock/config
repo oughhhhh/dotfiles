@@ -6,7 +6,7 @@ disable-caps-lock-text
 show-failed-attempts
 color=44475a80
 
-indicator-radius=64
+indicator-radius=128
 ignore-empty-password
 
 separator-color=00000000

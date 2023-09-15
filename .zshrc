@@ -95,7 +95,7 @@ export ARCHFLAGS="-arch x86_64"
 alias config='/usr/bin/git --git-dir=/home/bond/dotfiles/ --work-tree=/home/bond'
 alias yay='yay --aur'
 alias genshin='gamescope -w 1280 -h 800 -f -- an-anime-game-launcher'
-alias csgo='gamescope -w 1024 -h 768 -S stretch -f -- steam'
+alias csgo='gamescope -O HDMI-A-1 -w 1280 -h 800 -S stretch -f -- steam'
 
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   Hyprland
