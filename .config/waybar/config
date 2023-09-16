@@ -3,7 +3,7 @@
     "position": "bottom",
     "spacing": 4, 
     "modules-left": ["hyprland/workspaces"],
-    "modules-right": ["pulseaudio", "network", "idle_inhibitor", "battery", "clock", "tray"],
+    "modules-right": ["pulseaudio", "network", "battery", "clock", "tray"],
     
     "idle_inhibitor": {
         "format": "{icon} ",
