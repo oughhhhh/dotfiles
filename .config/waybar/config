@@ -55,7 +55,7 @@
         "format-bluetooth-muted": "󰂲",
         "format-muted": "󰖁",
         "format-icons": {
-            "default": ["", "", ""]
+            "default": ["", "", "󰕾"]
         }
     }
 } 
