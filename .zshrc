@@ -94,8 +94,9 @@ export ARCHFLAGS="-arch x86_64"
 
 alias config='/usr/bin/git --git-dir=/home/bond/dotfiles/ --work-tree=/home/bond'
 alias yay='yay --aur'
-alias genshin='gamescope -O HDMI-A-1 -W 1920 -H 1080 -w 1280 -h 720 -f -F fsr -- an-anime-game-launcher'
-alias csgo='gamescope -O HDMI-A-1 -w 1024 -h 768 -S stretch -f -- steam'
+alias genshin='sudo setcap "CAP_SYS_NICE=eip" /usr/bin/gamescope && gamescope -O HDMI-A-1 -W 1920 -H 1080 -w 1280 -h 720 -f -F fsr -- an-anime-game-launcher'
+alias cs='gamescope -O HDMI-A-1 -w 1024 -h 768 -S stretch -f -- steam'
+alias tetris='autoload -Uz tetriscurses && tetriscurses'
 
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   Hyprland
