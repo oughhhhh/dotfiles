@@ -95,6 +95,7 @@ export ARCHFLAGS="-arch x86_64"
 alias config='/usr/bin/git --git-dir=/home/bond/dotfiles/ --work-tree=/home/bond'
 alias yay='yay --aur'
 alias genshin='sudo setcap "CAP_SYS_NICE=eip" /usr/bin/gamescope && gamescope -O HDMI-A-1 -W 1920 -H 1080 -w 1280 -h 720 -f -F fsr -- an-anime-game-launcher'
+alias genshin_compact='sudo setcap "CAP_SYS_NICE=eip" /usr/bin/gamescope && gamescope -W 1600 -H 1000 -w 1152 -h 720 -F fsr -- an-anime-game-launcher'
 alias cs='gamescope -O HDMI-A-1 -w 1024 -h 768 -S stretch -f -- steam'
 alias tetris='autoload -Uz tetriscurses && tetriscurses'
 
