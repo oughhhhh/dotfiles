@@ -71,7 +71,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,18 +89,20 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+export EDITOR='vim'
+
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
 alias config='/usr/bin/git --git-dir=/home/bond/dotfiles/ --work-tree=/home/bond'
 alias yay='yay --aur'
-alias genshin='sudo setcap "CAP_SYS_NICE=eip" /usr/bin/gamescope && gamescope -O HDMI-A-1 -W 1920 -H 1080 -w 1280 -h 720 -f -F fsr -- an-anime-game-launcher'
+alias genshin='sudo setcap "CAP_SYS_NICE=eip" gamescope -O HDMI-A-1 -W 1920 -H 1080 -w 1280 -h 720 -f -F fsr -- an-anime-game-launcher'
 alias cs='gamescope -O HDMI-A-1 -w 1024 -h 768 -S stretch -f -- steam'
 alias tetris='autoload -Uz tetriscurses && tetriscurses'
 alias donut='clear && trap clear SIGINT && donut'
-alias vim=nvim
 alias krunker='gamescope -O HDMI-A-1 /bin/setup.AppImage'
-alias genshin_compact='sudo setcap "CAP_SYS_NICE=eip" /usr/bin/gamescope && gamescope -W 1600 -H 1000 -w 1152 -h 720 -F fsr -- an-anime-game-launcher' 
+alias genshin_compact='sudo setcap "CAP_SYS_NICE=eip" /usr/bin/gamescope && gamescope -W 1600 -H 1000 -w 1152 -h 720 -F fsr -- an-anime-game-launcher'
+alias resetBT='sudo rm -rf /var/lib/bluetooth/74:4C:A1:82:6E:08/5C:EB:68:E4:3E:70 && systemctl restart bluetooth'
 
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   Hyprland
